@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> COOL BOY APPRECIATION.</title>
+    <style>
+        .secret {
+            display: none;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function revealSecret() {
+            var secret = document.getElementById("secret");
+            if (secret.style.display === "none") {
+                secret.style.display = "inline";
+            } else {
+                secret.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>I admire your patience and level of coolness/calmness, you are def the coolest guy i know.:</p>
+    <p onclick="revealSecret()" style="cursor: pointer; color: pink; text-decoration: underline;">
+        Click me to reveal the secret!
+    </p>
+    <p id="secret" class="secret">Thank you for taking my 82th/ 82s of sorries as the first sorry, huh? <3</p>
+</body>
+</html>
